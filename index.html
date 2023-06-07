@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- <link href="../assets/css/styles.css" rel="stylesheet"> -->
+    <link href="./build.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body class="bg-mainColor mx-[8%]">
+   <div class="container text-white">
+        <header class="relative my-8">
+            <input type="text" placeholder="Dushanbe" class="border-b pr-8 text-white font-bold w-full border-white bg-transparent focus:outline-none">
+            <button class="px-2 absolute right-0 p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
+                    <path d="M1.00182 14.0293C0.768169 14.0297 0.541733 13.9483 0.361821 13.7993C0.260562 13.7153 0.176861 13.6122 0.115509 13.4959C0.0541566 13.3795 0.0163603 13.2522 0.00428446 13.1212C-0.00779141 12.9903 0.00609061 12.8582 0.0451351 12.7326C0.0841796 12.607 0.147619 12.4903 0.231821 12.3893L4.71182 7.02927L0.391821 1.65927C0.308755 1.55698 0.246724 1.43928 0.209292 1.31294C0.17186 1.18661 0.159766 1.05411 0.173706 0.923086C0.187645 0.792057 0.227342 0.665075 0.290516 0.549439C0.353689 0.433802 0.439094 0.331791 0.541821 0.249268C0.645287 0.158231 0.766453 0.0895639 0.897715 0.0475748C1.02898 0.00558578 1.1675 -0.00881792 1.3046 0.00526697C1.44169 0.0193519 1.57439 0.0616216 1.69437 0.129423C1.81436 0.197225 1.91903 0.289095 2.00182 0.399268L6.83182 6.39927C6.9789 6.5782 7.05931 6.80264 7.05931 7.03427C7.05931 7.26589 6.9789 7.49034 6.83182 7.66927L1.83182 13.6693C1.7315 13.7903 1.60407 13.8859 1.45986 13.9485C1.31565 14.011 1.15873 14.0387 1.00182 14.0293Z" fill="#FCB851"/>
+                </svg>
+            </button>
+        </header>
+        <main>
+            <div class="bg-secondColor flex-column md:flex md:justify-center md:items-center rounded-md relative">
+                <div class="absolute -top-4 left-0 right-0 m-auto w-[150px] text-center rounded-full bg-zinc-950 p-2 text-xs">Sunday, 8 March 2021</div>
+                <img src="./assets/images/cloudMoon.png" alt="" class="mx-auto md:mb-4">
+                <div class="mx-auto pb-4 text-center">
+                    <div class="font-bold text-7xl md:mb-4">23<sup>o</sup></div>
+                    <p class="text-sm font-bold">Moon Cloud Fast Wind</p>
+                </div>
+            </div>
+            <ul class="bg-secondColor flex justify-evenly items-center rounded-md my-5 py-7">
+                <li class="text-center">
+                    <img src="./assets/images/carbon_humidity.svg" alt="" class="mx-auto">
+                    <p class="text-sm font-bold my-1">75%</p>
+                    <p class="text-xs">Humidity</p>
+                </li>
+                <li class="text-center">
+                    <img src="./assets/images/tabler_wind.svg" alt="" class="mx-auto">
+                    <p class="text-sm font-bold my-1">8 km/h</p>
+                    <p class="text-xs">Wind</p>
+                </li>
+                <li class="text-center">
+                    <img src="./assets/images/ion_speedometer.svg" alt="" class="mx-auto">
+                    <p class="text-sm font-bold my-1">1011</p>
+                    <p class="text-xs">Air Pressure</p>
+                </li>
+                <li class="text-center">
+                    <img src="./assets/images/ic_round-visibility.svg" alt="" class="mx-auto">
+                    <p class="text-sm font-bold my-1">6 km</p>
+                    <p class="text-xs">Visibility</p>
+                </li>
+            </ul>
+            <div class="flex justify-between items-center mb-5">
+                <div>Today</div>
+                <button class="inline-flex items-center">Next 3 Days
+                    <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
+                        <path d="M1.00182 14.0293C0.768169 14.0297 0.541733 13.9483 0.361821 13.7993C0.260562 13.7153 0.176861 13.6122 0.115509 13.4959C0.0541566 13.3795 0.0163603 13.2522 0.00428446 13.1212C-0.00779141 12.9903 0.00609061 12.8582 0.0451351 12.7326C0.0841796 12.607 0.147619 12.4903 0.231821 12.3893L4.71182 7.02927L0.391821 1.65927C0.308755 1.55698 0.246724 1.43928 0.209292 1.31294C0.17186 1.18661 0.159766 1.05411 0.173706 0.923086C0.187645 0.792057 0.227342 0.665075 0.290516 0.549439C0.353689 0.433802 0.439094 0.331791 0.541821 0.249268C0.645287 0.158231 0.766453 0.0895639 0.897715 0.0475748C1.02898 0.00558578 1.1675 -0.00881792 1.3046 0.00526697C1.44169 0.0193519 1.57439 0.0616216 1.69437 0.129423C1.81436 0.197225 1.91903 0.289095 2.00182 0.399268L6.83182 6.39927C6.9789 6.5782 7.05931 6.80264 7.05931 7.03427C7.05931 7.26589 6.9789 7.49034 6.83182 7.66927L1.83182 13.6693C1.7315 13.7903 1.60407 13.8859 1.45986 13.9485C1.31565 14.011 1.15873 14.0387 1.00182 14.0293Z" fill="#FCB851"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="flex justify-between items-center rounded-md mb-3">
+                <li class="text-center bg-secondColor rounded-md p-2 w-[33%]">
+                    <p class="text-xs font-bold">06:00 AM</p>
+                    <img src="./assets/images/Cloud 3 zap.png" alt="" class="mx-auto">
+                    <p class="text-lg">14<sup>o</sup>C</p>
+                </li>
+                <li class="text-center bg-secondColor rounded-md mx-4 p-2 w-[33%]">
+                    <p class="text-xs font-bold">08:00 AM</p>
+                    <img src="./assets/images/Sun cloud mid rain.png" alt="" class="mx-auto">
+                    <p class="text-lg">24<sup>o</sup>C</p>
+                </li>
+                <li class="text-center bg-secondColor rounded-md p-2 w-[33%]">
+                    <p class="text-xs font-bold">10:00 AM</p>
+                    <img src="./assets/images/Big rain drops.png" alt="" class="mx-auto">
+                    <p class="text-lg">23<sup>o</sup>C</p>
+                </li>
+            </ul>     
+        </main>
+        <footer class="text-center text-gray-600 mb-3">2023 copyright</footer>
+   </div>
+</body>
+</html>
